@@ -59,7 +59,7 @@ def add_message(thread_id, role, content):
 
 def run_assistant(thread_id, assistant_id):
     """
-    Runs the assistant on the given thread and polls for completion.
+    Runs the assistant on the given thread and polls for completioa.
     After completion, retrieves all messages in the thread and returns only
     the most recent assistant reply.
     """
