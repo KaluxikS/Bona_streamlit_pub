@@ -39,7 +39,7 @@ assistant_id = st.secrets["assistant"]["assistant_id"]
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = None
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "Cześć! W czym mogę Tobie pomóc?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Cześć! Jestem wirtualnym asystentem firmy Bona! W czym mogę Tobie pomóc?"}]
 if "assistant_id" not in st.session_state:
     st.session_state.assistant_id = assistant_id
 
@@ -97,7 +97,7 @@ st.title("Porozmawiaj z wirtualnym asystentem Bony!")
 
 if st.button("Wyczyść Sesję"):
     st.session_state.thread_id = None
-    st.session_state.messages = [{"role": "assistant", "content": "Cześć! W czym mogę Tobie pomóc?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Cześć! Jestem wirtualnym asystentem firmy Bona! W czym mogę Tobie pomóc?"}]
     st.rerun()
 
 for msg in st.session_state.messages:
